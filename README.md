@@ -1,6 +1,6 @@
-# Bhatti_Amon_coding_assignment12
+# Bhatti_Amon_coding_assignment13
 
-This repository contains a UI component library/toolkit built with React and Storybook.
+This repository contains a UI component library with code quality checks implemented using Husky and GitHub Actions.
 
 ## Getting Started
 
@@ -19,21 +19,21 @@ You need to have Docker installed on your system.
     ```
 2.  **Build the Docker image:**
     ```bash
-    docker build -t Bhatti_Amon_coding_assignment12 .
+    docker build -t Bhatti_Amon_coding_assignment13 .
     ```
 3.  **Run the Docker container:**
     ```bash
-    docker run -d -p 8083:80 --name Bhatti_Amon_coding_assignment12 Bhatti_Amon_coding_assignment12
+    docker run -d -p 8018:80 --name Bhatti_Amon_coding_assignment13 Bhatti_Amon_coding_assignment13
     ```
-    - The `-p 8083:80` flag maps port **8083** on your computer to port 80 inside the container.
+    - The `-p 8018:80` flag maps port **8018** on your computer to port 80 inside the container.
     - The `--name` flag sets the required container name.
 
 4.  **Access the site:**
-    Open your web browser and navigate to `http://localhost:8083` or `http://127.0.0.1:8083`.
+    Open your web browser and navigate to `http://localhost:8018` or `http://127.0.0.1:8018`.
 
 ### Stopping the Container
 
 To stop and remove the container, run these commands:
 ```bash
-docker stop Bhatti_Amon_coding_assignment12
-docker rm Bhatti_Amon_coding_assignment12
+docker stop Bhatti_Amon_coding_assignment13
+docker rm Bhatti_Amon_coding_assignment13

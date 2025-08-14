@@ -26,7 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -56,8 +57,18 @@
     "@storybook/react": "^9.1.2",
     "@storybook/react-webpack5": "^9.1.2",
     "eslint-plugin-storybook": "^9.1.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
     "prop-types": "^15.8.1",
     "storybook": "^9.1.2",
     "webpack": "^5.101.1"
   }
+  "lint-staged": {
+  "*.{js,jsx,ts,tsx}": [
+    "prettier --write",
+    "eslint --fix",
+    "npm test -- --findRelatedTests --watchAll=false"
+  ]
+},
 }
